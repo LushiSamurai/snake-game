@@ -1,6 +1,8 @@
 
 import pygame, random
 from pygame.locals import *
+from defs import collision
+
 
 nome = input("Digite seu nome: ")
 email = input("Digite ao seu e-mail:")
@@ -11,8 +13,7 @@ def on_grid_random():
     y = random.randint(0,59)
     return (x * 10, y * 10)
 
-def collision(c1, c2):
-    return (c1[0] == c2[0]) and (c1[1] == c2[1])
+collision
 
 # movimento
 UP = 0
